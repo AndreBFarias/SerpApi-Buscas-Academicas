@@ -1,3 +1,5 @@
+<div align="center">
+  
 [![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/SerpApiBuscasAcademicas.svg?style=social)](https://github.com/AndreBFarias/SerpApi-Buscas-Academicas/)
@@ -7,7 +9,7 @@
   <h1 style="font-size: 2em;">SerpApi para Buscas Acadêmicas</h1>
   <img src="assets/logo.png" width="200" text-align= "center" alt="Ícone Acadêmico">
 </div>
-
+</div>
 Uma ferramenta open source para buscas acadêmicas via SerpApi (Google Scholar), com coleta assíncrona, formatação, extração de conteúdo e ranking de domínios/compartilhamentos. Útil para mapear tendências em papers, citações e impacto social – perfeito para pesquisadores, lobistas ou analistas de dados caçando insights em temas como "mudanças climáticas" ou "IA regulatória".
 
 
