@@ -46,5 +46,5 @@ asyncio.run(main('sua_chave', 'sua_query', num_pages=3))
 ### Dependências
 >Bibliotecas open source para buscas e análise.
 
-### Licença
->MIT - Livre para uso, modificação e rituais de dados.
+### Licença GLP 
+> Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
