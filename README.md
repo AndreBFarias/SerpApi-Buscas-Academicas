@@ -37,14 +37,6 @@ pip install serpapi aiohttp beautifulsoup4 pandas
 - Execute Coleta_Academica_SerpApi.py com sua query e páginas.
 - Prossiga com Formatacao_Resultados.py, Extracao_Conteudo.py (passando links) e Ranking_Dominios_Compartilhamentos.py.
 
-### Exemplo:
-
-```python import asyncio
-asyncio.run(main('sua_chave', 'sua_query', num_pages=3))
-```
-
-### Dependências
->Bibliotecas open source para buscas e análise.
 
 ### Licença GLP 
 > Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
