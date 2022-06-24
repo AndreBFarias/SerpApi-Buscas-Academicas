@@ -1,5 +1,6 @@
 <div align="center">
-  
+
+[![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
 [![Licença](https://img.shields.io/badge/licença-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
 [![Estrelas](https://img.shields.io/github/stars/AndreBFarias/SerpApiBuscasAcademicas.svg?style=social)](https://github.com/AndreBFarias/SerpApi-Buscas-Academicas/)
