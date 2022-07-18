@@ -29,5 +29,27 @@ pip install -r requirements.txt
 
 ---
 
+## Configuração
+
+Exporte sua chave de API antes de executar:
+
+```bash
+export SERPAPI_KEY="sua_chave_aqui"
+```
+
+---
+
+## Uso
+
+Execute os scripts na seguinte ordem:
+
+### 1. Coleta de dados
+
+```bash
+python Coleta_Academica_SerpApi.py --query "inteligência artificial regulatória" --paginas 5
+```
+
+---
+
 ### Licença GLP
 > Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
