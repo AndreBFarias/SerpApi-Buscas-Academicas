@@ -14,26 +14,20 @@ Pipeline modular para buscas acadêmicas via SerpApi (Google Scholar). Realiza c
 
 ## Pré-requisitos
 
-- Python 3.8 ou superior.
-## Pacotes:
-- serpapi
-- aiohttp
-- beautifulsoup4
-- pandas
-- urllib
+- Python 3.8 ou superior
+- Chave de API SerpApi (gratuita para até 100 buscas/mês em [serpapi.com](https://serpapi.com))
+
+---
 
 ## Instalação
 
 ```bash
-# Instale pacotes:
-pip install serpapi aiohttp beautifulsoup4 pandas
+git clone https://github.com/AndreBFarias/SerpApi-Buscas-Academicas.git
+cd SerpApi-Buscas-Academicas
+pip install -r requirements.txt
 ```
 
-### Uso
-- Configure sua chave SerpApi como variável de ambiente (SERPAPI_KEY).
-- Execute Coleta_Academica_SerpApi.py com sua query e páginas.
-- Prossiga com Formatacao_Resultados.py, Extracao_Conteudo.py (passando links) e Ranking_Dominios_Compartilhamentos.py.
-
+---
 
 ### Licença GLP
 > Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
