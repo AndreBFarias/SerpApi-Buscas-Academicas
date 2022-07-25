@@ -49,6 +49,12 @@ Execute os scripts na seguinte ordem:
 python Coleta_Academica_SerpApi.py --query "inteligência artificial regulatória" --paginas 5
 ```
 
+### 2. Formatação dos resultados
+
+```bash
+python Formatacao_Resultados.py
+```
+
 ---
 
 ### Licença GLP
