@@ -55,6 +55,12 @@ python Coleta_Academica_SerpApi.py --query "inteligência artificial regulatóri
 python Formatacao_Resultados.py
 ```
 
+### 3. Extração de conteúdo
+
+```bash
+python Extracao_Conteudo.py --links links.csv
+```
+
 ---
 
 ### Licença GLP
