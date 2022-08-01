@@ -69,5 +69,31 @@ python Ranking_Dominios_Compartilhamentos.py
 
 ---
 
+## Estrutura do Projeto
+
+```
+SerpApi-Buscas-Academicas/
+├── assets/                           # Recursos estáticos
+├── Coleta_Academica_SerpApi.py       # Coleta assíncrona via Google Scholar
+├── Formatacao_Resultados.py          # Normalização e formatação dos dados
+├── Extracao_Conteudo.py              # Extração de texto dos links coletados
+├── Ranking_Dominios_Compartilhamentos.py  # Ranqueamento por domínio e impacto
+├── requirements.txt                  # Dependências
+└── README.md
+```
+
+---
+
+## Dependências
+
+```
+serpapi
+aiohttp
+beautifulsoup4
+pandas
+```
+
+---
+
 ### Licença GLP
 > Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
