@@ -61,6 +61,12 @@ python Formatacao_Resultados.py
 python Extracao_Conteudo.py --links links.csv
 ```
 
+### 4. Ranking por domínio e compartilhamentos
+
+```bash
+python Ranking_Dominios_Compartilhamentos.py
+```
+
 ---
 
 ### Licença GLP
