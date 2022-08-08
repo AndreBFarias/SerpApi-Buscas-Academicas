@@ -95,5 +95,6 @@ pandas
 
 ---
 
-### Licença GLP
-> Livre para modificar e usar em rituais arcanos desde que tudo permaneça livre.
+## Licença
+
+Distribuído sob a [GPLv3](LICENSE).
