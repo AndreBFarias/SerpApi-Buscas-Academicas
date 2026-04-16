@@ -1,7 +1,7 @@
 [![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
 [![Licença](https://img.shields.io/badge/licença-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
-[![Estrelas](https://img.shields.io/github/stars/AndreBFarias/SerpApiBuscasAcademicas.svg?style=social)](https://github.com/AndreBFarias/SerpApi-Buscas-Academicas/)
+[![Estrelas](https://img.shields.io/github/stars/AndreBFarias/SerpApiBuscasAcademicas.svg?style=social)](https://github.com/AndreBFarias/ScholarLens/)
 [![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/SerpApiBuscasAcademicas/issues)
 
 # SerpApi para Buscas Acadêmicas
@@ -22,8 +22,8 @@ Pipeline modular para buscas acadêmicas via SerpApi (Google Scholar). Realiza c
 ## Instalação
 
 ```bash
-git clone https://github.com/AndreBFarias/SerpApi-Buscas-Academicas.git
-cd SerpApi-Buscas-Academicas
+git clone https://github.com/AndreBFarias/ScholarLens.git
+cd ScholarLens
 pip install -r requirements.txt
 ```
 
@@ -72,7 +72,7 @@ python Ranking_Dominios_Compartilhamentos.py
 ## Estrutura do Projeto
 
 ```
-SerpApi-Buscas-Academicas/
+ScholarLens/
 ├── assets/                           # Recursos estáticos
 ├── Coleta_Academica_SerpApi.py       # Coleta assíncrona via Google Scholar
 ├── Formatacao_Resultados.py          # Normalização e formatação dos dados
