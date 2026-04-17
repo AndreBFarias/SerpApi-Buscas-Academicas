@@ -1,100 +1,84 @@
-[![opensource](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](#)
 [![Licença](https://img.shields.io/badge/licença-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Python](https://img.shields.io/badge/python-3.8+-green.svg)](https://www.python.org/)
-[![Estrelas](https://img.shields.io/github/stars/AndreBFarias/SerpApiBuscasAcademicas.svg?style=social)](https://github.com/AndreBFarias/ScholarLens/)
-[![Contribuições](https://img.shields.io/badge/contribuições-bem--vindas-brightgreen.svg)](https://github.com/AndreBFarias/SerpApiBuscasAcademicas/issues)
+[![Python](https://img.shields.io/badge/python-3.10+-green.svg)](https://www.python.org/)
+[![CI](https://github.com/AndreBFarias/ScholarLens/actions/workflows/ci.yml/badge.svg)](https://github.com/AndreBFarias/ScholarLens/actions/workflows/ci.yml)
 
-# SerpApi para Buscas Acadêmicas
+# ScholarLens
 
 ![Ícone Acadêmico](assets/logo.png)
 
-Pipeline modular para buscas acadêmicas via SerpApi (Google Scholar). Realiza coleta assíncrona de papers, formatação de resultados, extração de conteúdo e geração de rankings por domínio e compartilhamentos. Útil para mapear tendências em publicações científicas, citações e impacto social de temas específicos.
+Pipeline modular para buscas acadêmicas via SerpApi (Google Scholar). Coleta assíncrona de papers, formatação de resultados, extração de conteúdo e ranking por domínio e compartilhamentos. Útil para mapear tendências em publicações científicas.
 
 ---
 
 ## Pré-requisitos
 
-- Python 3.8 ou superior
-- Chave de API SerpApi (gratuita para até 100 buscas/mês em [serpapi.com](https://serpapi.com))
-
----
+- Python 3.10 ou superior
+- Chave SerpApi (gratuita até 100 buscas/mês em [serpapi.com](https://serpapi.com))
 
 ## Instalação
 
 ```bash
 git clone https://github.com/AndreBFarias/ScholarLens.git
 cd ScholarLens
-pip install -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e ".[dev]"
 ```
 
----
-
 ## Configuração
-
-Exporte sua chave de API antes de executar:
 
 ```bash
 export SERPAPI_KEY="sua_chave_aqui"
 ```
 
----
-
 ## Uso
 
-Execute os scripts na seguinte ordem:
-
-### 1. Coleta de dados
-
 ```bash
-python Coleta_Academica_SerpApi.py --query "inteligência artificial regulatória" --paginas 5
+# Formatação dos resultados já coletados
+python -m scholarlens.formatacao
+
+# Ranking
+python -m scholarlens.ranking
 ```
 
-### 2. Formatação dos resultados
+Em scripts, use os módulos diretamente:
 
-```bash
-python Formatacao_Resultados.py
+```python
+import asyncio
+from scholarlens.coleta import main as coletar
+asyncio.run(coletar(api_key, "inteligencia artificial regulatoria", num_pages=5))
 ```
 
-### 3. Extração de conteúdo
-
-```bash
-python Extracao_Conteudo.py --links links.csv
-```
-
-### 4. Ranking por domínio e compartilhamentos
-
-```bash
-python Ranking_Dominios_Compartilhamentos.py
-```
-
----
-
-## Estrutura do Projeto
+## Estrutura
 
 ```
 ScholarLens/
-├── assets/                           # Recursos estáticos
-├── Coleta_Academica_SerpApi.py       # Coleta assíncrona via Google Scholar
-├── Formatacao_Resultados.py          # Normalização e formatação dos dados
-├── Extracao_Conteudo.py              # Extração de texto dos links coletados
-├── Ranking_Dominios_Compartilhamentos.py  # Ranqueamento por domínio e impacto
-├── requirements.txt                  # Dependências
-└── README.md
+  src/scholarlens/
+    coleta.py        # Coleta assincrona via SerpApi
+    extracao.py      # Extracao de conteudo HTML
+    formatacao.py    # Normalizacao em DataFrame
+    ranking.py       # Ranking por dominio
+  tests/             # Testes pytest
+  assets/            # Logo e recursos
+  .github/workflows/ # CI
+  pyproject.toml
+  requirements.txt
 ```
 
----
+## Testes
 
-## Dependências
-
-```
-serpapi
-aiohttp
-beautifulsoup4
-pandas
+```bash
+pytest tests/ -v
 ```
 
----
+## Contribuição
+
+Ver [CONTRIBUTING.md](CONTRIBUTING.md) e [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Segurança
+
+Ver [SECURITY.md](SECURITY.md).
 
 ## Licença
 
-Distribuído sob a [GPLv3](LICENSE).
+GPL v3 -- ver [LICENSE](LICENSE).
