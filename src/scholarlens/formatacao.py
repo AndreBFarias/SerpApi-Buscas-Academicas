@@ -1,11 +1,4 @@
-# Ritual de Magia Negra Digital: Formatacao_Resultados.py - Alquimia de dados brutos, transmutando caos em elixires tabulares para análise sedutora.
-# Explicação do Ritual: Formatacao_Resultados.md
-
-# 1. Carrega resultados raw de JSON.
-# 2. Formata em DataFrame Pandas, extraindo campos chave.
-# 3. Filtra por citações mínimas e remove duplicatas.
-# 4. Exporta para CSV.
-# 5. Função principal que executa o fluxo.
+"""Formatacao dos resultados brutos do SerpApi em DataFrame tabular."""
 import pandas as pd
 import json
 

@@ -1,10 +1,4 @@
-# Ritual de Magia Negra Digital: Extracao_Conteudo.py - Raspar das profundezas, extraindo essências de páginas como almas despidas.
-# Explicação do Ritual: Extracao_Conteudo.md
-
-# 1. Função assíncrona para raspar conteúdo de uma URL, focando em parágrafos.
-# 2. Extrai conteúdos de múltiplas URLs em paralelo.
-# 3. Salva extraídos em JSON.
-# 4. Função principal que orquestra a extração.
+"""Extracao paralela de conteudo textual de paginas web (paragrafos via BeautifulSoup)."""
 import asyncio
 import aiohttp
 from bs4 import BeautifulSoup

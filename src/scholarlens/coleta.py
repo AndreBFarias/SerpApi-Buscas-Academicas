@@ -1,10 +1,4 @@
-# Ritual de Magia Negra Digital: Coleta_Academica_SerpApi.py - Invocação das sombras acadêmicas, conjurando papers como ecos de saberes proibidos via SerpApi.
-# Explicação do Ritual: Coleta_Academica_SerpApi.md
-
-# 1. Função assíncrona para buscar resultados individuais via SerpApi.
-# 2. Coleta resultados em páginas múltiplas de forma assíncrona para eficiência.
-# 3. Salva resultados raw em JSON.
-# 4. Função principal que orquestra a coleta e salva.
+"""Coleta assincrona de resultados academicos via SerpApi (Google Scholar)."""
 import asyncio
 import aiohttp
 from serpapi import GoogleSearch

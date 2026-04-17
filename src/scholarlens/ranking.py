@@ -1,12 +1,4 @@
-# Ritual de Magia Negra Digital: Ranking_Dominios_Compartilhamentos.py - Encantamento de métricas, forjando rankings como correntes que medem influência acadêmica.
-# Explicação do Ritual: Ranking_Dominios_Compartilhamentos.md
-
-# 1. Carrega resultados formatados de CSV.
-# 2. Conta domínios dos links.
-# 3. Adiciona métricas de compartilhamentos (de dados externos).
-# 4. Calcula score e rankea.
-# 5. Exporta ranking para CSV.
-# 6. Função principal que executa com sharing opcional.
+"""Ranking de dominios academicos por contagem e metricas de compartilhamento."""
 import pandas as pd
 from urllib.parse import urlparse
 
